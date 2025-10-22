@@ -1,4 +1,4 @@
-
+## File  handeling in python: count lines Not 
 ## 🎯 Aim
 To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'`.
 
@@ -16,20 +16,22 @@ with open("story.txt","w")as f:
     f.write('This is muruga\n')
     f.write("This is the world\n")
     f.write("not permentent in this  world\n")
-    f.write("This is the tamilnadu")
-
+    f.write("This is the tamilnadu\n")
+    f.write("kanthavela\n")
+    f.write("world is biggest")
+k=0
 with open("story.txt",'r') as f:
-    c=f.read()
-    k=0
-    for i in c:
-        if i.startswith(("T")):
+
+    for i in f:
+        if not i.startswith("T"):
             k+=1
-    print("count:",k)
+print("count:",k)
 
 ```
 
 ## Output
-<img width="1448" height="740" alt="image" src="https://github.com/user-attachments/assets/0e2297f4-9f1f-45ab-88f0-f583b92fc6d1" />
+<img width="1430" height="732" alt="Screenshot 2025-10-22 223016" src="https://github.com/user-attachments/assets/5a6b5cc6-c3f8-4501-9ade-a16eac0616c5" />
+
 
 
 ## Result
